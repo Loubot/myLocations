@@ -1,2 +1,2 @@
-Phonegap app using ajax calls to get locations. Then display these in using google maps api. 
+Phonegap app using ajax calls to get locations. The app then displays these locations in a google map. 
 Makes use of jquery promises.
