@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, usr-scalable=no" target-densitydpi=device-dpi>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    
+  
+<!-- 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile.structure-1.3.2.min.css" /> -->
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBXO67ui3ENSzhijLVZEcbac4t2lLVECew&sensor=true"></script>
+	
+	<!-- this is the link to myStyles.css, our own css file, notice that I "pop" out of the "main" folder using ".." , then into the css folder, and then reference "myStyles.css" -->
+	<link href="../styles.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+	
+	
+	
+	<script type="text/javascript" src="../myLocations/myLocations.js"></script>
+	<script type="text/javascript" src="../mapPage/mapPage.js"></script>
+	<script type="text/javascript" src="../onDeviceReady.js"></script>
+	<script type="text/javascript" src="../cordova.js"></script>
+	<script type="text/javascript" src="../markerWithLabel.js"></script>
+	
+	
+	
+	
+    
+</head>
+<body>
+<div id="my_locations_page" class = "pageDiv"data-role="page">
+	<div data-role = "navbar">
+		<ul>
+			<li><a class= 'ui-btn-active ui-state-persist' href = '#' onclick = 'displayAttrs()'>Attractions</a></li>
+			<li><a  href = '#' onclick = 'displayOffers()'>Offers</a></li>
+			<li><a href = '#' onclick = 'displayAll()'>Both</a></li>			
+		</ul>	
+	</div>
+	
+	<div id ="my_locations_content" data-role="content" class="noHorFContent">
+		<div id='mapDiv'>
+			
+		</div>
+		<p id="attractions">Attractions</p>
+		<p id="offers">Offers</p>
+		
+	</div>
+	
+</div>		
+
+</body>
+</html>

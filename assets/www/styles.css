@@ -1,0 +1,23 @@
+#mapDiv{
+	height:50%;
+	
+}
+
+#map{
+	height:33%;
+}
+
+.makeVisisble{
+	display:"";
+}
+.makeInvisible{
+	display:none;
+}
+
+#attractions{
+	color:#642EFE;
+}
+
+#offers{
+	color:#01DF3A;
+}

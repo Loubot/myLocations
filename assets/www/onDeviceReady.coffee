@@ -1,0 +1,2 @@
+document.addEventListener 'deviceready', ->
+	init()
