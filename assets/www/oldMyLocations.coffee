@@ -38,19 +38,19 @@ window.init = () ->
   
 
   comms = new BTAjax()
-  comms.pushToQ 'http://keyquests.elasticbeanstalk.com/attractions/getAllDynamic.app',
+  comms.pushToQ '#',
   	lat:51.899138
   	lon: -8.297131
   	myLocationsGotAttrs, myLocationsFailAttrs
   comms.execute()
 
-  comms.pushToQ "http://keyquests.elasticbeanstalk.com/advertiser/getAllOffersAtLocation.app",
+  comms.pushToQ "#{}",
     lat:51.899138
     lon: -8.297131
     myLocsGotOffers, myLocsFailOffers
   comms.execute()
 
-  comms.pushToQ "http://keyquests.elasticbeanstalk.com/userOffers/getUserSavedOffers.app",
+  comms.pushToQ "#{}",
     userID:'520b88d8e4b032fe34fd3c63'
     myLocsSaved, myLocsFailSaved
   comms.execute()

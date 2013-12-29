@@ -123,7 +123,7 @@
         getAttrs: function() {
           var promise;
           promise = $.Deferred();
-          $.ajax('http://keyquests.elasticbeanstalk.com/attractions/getAllDynamic.app', {
+          $.ajax('#', {
             data: {
               lat: 51.850731,
               lon: -8.301129
@@ -145,7 +145,7 @@
         getOffers: function() {
           var adsPromise;
           adsPromise = $.Deferred();
-          $.ajax('http://keyquests.elasticbeanstalk.com/advertiser/getAllOffersAtLocation.app', {
+          $.ajax('#', {
             data: {
               lat: 51.850731,
               lon: -8.301129

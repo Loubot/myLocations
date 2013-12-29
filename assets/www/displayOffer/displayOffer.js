@@ -19,7 +19,7 @@ $("#display_offer_page").on("pageshow",function(){
 	$("#displayOfferInfo").append('<p class="cl_offerH3">Offer Expires : ' + dateFromTS +'</p><br>');
 
 	var comms = new BTAjax();
-	comms.pushToQ("http://keyquests.elasticbeanstalk.com/userOffers/setUserViewedOffer.app", {
+	comms.pushToQ("#{}", {
 		userID:window.localStorage.getItem("userId"),
 		offerID:offerInfo.id
 	}, loggedOfferView,failedOfferview);
@@ -32,7 +32,7 @@ $("#display_offer_page").on("pageshow",function(){
 	$("#saveOffer").on("click",function(){
 		
 		var comms = new BTAjax();
-		comms.pushToQ("http://keyquests.elasticbeanstalk.com/userOffers/setUserSavedOffer.app", {
+		comms.pushToQ("h#{}", {
 			userID:window.localStorage.getItem("userId"),
 			offerID:offerInfo.id
 		}, savedOfferSuccess,savedOfferFail);
